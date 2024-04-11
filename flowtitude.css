@@ -83,7 +83,7 @@ section {
 }
 section > [class*=brxe-] {
 	margin-inline: auto;
-	max-width: var(--ft-container);
+	max-width: var(--ft-container) !important;
 }
 header > section {
 	container-type: normal;
