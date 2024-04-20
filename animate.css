@@ -1,0 +1,38 @@
+/* Avoid FUC on frontend*/
+.bricks-is-frontend .animate{
+  opacity:0;
+}
+
+/* Animated Class*/
+.animate-on{
+  animation-name: fadeAnimation;
+  animation-delay: calc(var(--delay, 0) * 200ms);
+  animation-duration: var(--duration, 400ms);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Change translate Origin*/
+.animate--left-to-right{
+  --translate: -20px,0,0;
+}
+.animate--right-to-left{
+  --translate: 20px,0,0;
+}
+.animate--top-to-bottom{
+  --translate: 0,-20px,0;
+}
+.animate--bottom-to-top{
+  --translate: 0,20px,0;
+}
+
+/* Keyframes */
+@keyframes fadeAnimation{
+  from{
+	transform: translate3d(var(--translate));
+  }
+  to{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+  }
+}
