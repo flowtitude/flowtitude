@@ -1,4 +1,4 @@
-root: {
+ion root: {
   --ft-text-xs:   clamp(0.69rem, calc(-0.087cqi + 0.7096rem), 0.64rem );
   --ft-text-sm:   clamp(0.83rem, calc(-0.0522cqi + 0.8417rem), 0.8rem );
   --ft-text-base: clamp(1rem, calc(0cqi + 1rem), 1rem );
@@ -108,12 +108,12 @@ pre,
 blockquote {
 	margin-block: var(--space-2)
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
 	overflow-wrap: break-word;
 	font-family: var(--ft-font-display);
 	font-weight: 600;
